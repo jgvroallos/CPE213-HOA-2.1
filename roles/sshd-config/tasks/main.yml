@@ -1,0 +1,7 @@
+---
+- name: Copy MODIFIED sshd_config onto Target Managed Node
+  become_user: "{{ ansible_user }}"
+  copy:
+    src: sshd_config
+    dest: /home/{{ ansible_user }}/nginx-web/index.html
+    mode: '0644'
