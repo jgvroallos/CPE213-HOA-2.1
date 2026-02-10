@@ -1,0 +1,7 @@
+---
+# tasks file for roles/sshd_config
+- name: Copy MODIFIED sshd_config onto Target Managed Node
+  copy:
+    src: roles/sshd_config/files/sshd_config-modified
+    dest: /etc/ssh/sshd_config
+    mode: '0644'

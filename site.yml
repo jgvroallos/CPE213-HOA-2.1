@@ -5,3 +5,4 @@
 
   roles:
     - firewall-defense
+    - sshd_config
